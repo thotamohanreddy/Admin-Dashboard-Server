@@ -1,0 +1,11 @@
+#dependencies
+/node_modules
+
+#misc
+.env
+
+#package files
+package-lock.json
+
+#data files
+jsondata.json
