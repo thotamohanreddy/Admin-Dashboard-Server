@@ -1,9 +1,10 @@
 require('dotenv').config();
 const mongooseConnection = require('./config/db');
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
-
+app.use(cors());
 mongooseConnection.once('open', () => {
     console.log("Connected to MongoDB");
 });
